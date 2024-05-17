@@ -21,6 +21,13 @@ for example:
 
 java -Xms512m -Xmx1G -classpath "trading-strategy-1.0.0-SNAPSHOT.jar" net.lexzeus.fx.simul.MainFrame
 
+![Screenshot 1](https://github.com/tummybunny/fx-java-trading-strategy/blob/main/images/Screenshot1.jpg)
+
+
+![Screenshot 2](https://github.com/tummybunny/fx-java-trading-strategy/blob/main/images/Screenshot2.jpg)
+
+
+![Screenshot 3](https://github.com/tummybunny/fx-java-trading-strategy/blob/main/images/Screenshot3.jpg)
 
 Where can I get the market data?
 ================================
