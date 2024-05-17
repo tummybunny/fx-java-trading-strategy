@@ -10,6 +10,9 @@ import java.io.File;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 
+import static net.lexzeus.fx.simul.Configuration.REPORT_DIR_KEY;
+import static net.lexzeus.fx.simul.Configuration.getProperty;
+
 /**
  * Simple frame to choose the buy/sell strategy and customize its parameters.
  *
@@ -136,7 +139,7 @@ public class StrategyFrame extends JFrame implements ISizeCallback {
 
          PnL[] pnls = listener.getRecords();
          if (pnls.length > 0) {
-            JFileChooser jf = new JFileChooser();
+            JFileChooser jf = new JFileChooser(getProperty(REPORT_DIR_KEY));
             jf.setFileFilter(new FileFilter() {
 
                @Override

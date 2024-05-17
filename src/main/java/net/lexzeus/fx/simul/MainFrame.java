@@ -21,8 +21,7 @@ import javax.swing.filechooser.FileFilter;
 import net.lexzeus.fx.simul.indicators.TechnicalIndicator;
 import net.lexzeus.fx.simul.indicators.TechnicalIndicatorFactory;
 
-import static net.lexzeus.fx.simul.Configuration.MARKET_DATA_DIR_KEY;
-import static net.lexzeus.fx.simul.Configuration.getProperty;
+import static net.lexzeus.fx.simul.Configuration.*;
 import static net.lexzeus.fx.simul.Util.defaultIfNull;
 
 public class MainFrame extends JFrame implements IMainFrame {
@@ -120,7 +119,7 @@ public class MainFrame extends JFrame implements IMainFrame {
 
 
    public void saveSnapshot() {
-      JFileChooser chooser = new JFileChooser();
+      JFileChooser chooser = new JFileChooser(getProperty(SNAPSHOT_DIR_KEY));
       chooser.setFileFilter(new FileFilter() {
 
          public boolean accept(File f) {
@@ -145,7 +144,7 @@ public class MainFrame extends JFrame implements IMainFrame {
    }
 
    public void loadSnapshot() {
-      JFileChooser chooser = new JFileChooser();
+      JFileChooser chooser = new JFileChooser(getProperty(SNAPSHOT_DIR_KEY));
       chooser.setFileFilter(new FileFilter() {
 
          public boolean accept(File f) {
@@ -233,7 +232,7 @@ public class MainFrame extends JFrame implements IMainFrame {
    public void stopRecordProfitAndLoss() {
       PnL[] pnls = chartView.stopPnL();
       if (pnls.length > 0) {
-         JFileChooser jf = new JFileChooser();
+         JFileChooser jf = new JFileChooser(getProperty(REPORT_DIR_KEY));
          jf.setFileFilter(new FileFilter() {
 
             public boolean accept(File f) {

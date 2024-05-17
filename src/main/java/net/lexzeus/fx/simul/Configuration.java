@@ -18,6 +18,8 @@ public class Configuration {
 
     public static final String VERSION_KEY = "version";
     public static final String MARKET_DATA_DIR_KEY = "marketdata.dir";
+    public static final String SNAPSHOT_DIR_KEY = "snapshot.dir";
+    public static final String REPORT_DIR_KEY = "report.dir";
     public static final String FX_SIMUL_CONFIG_KEY = "FX_SIMUL_CONFIG";
     public static final String FX_SIMUL_CONFIG = "TradingStrategyConfiguration.properties";
     public static final Log log = Log.get(Configuration.class);
