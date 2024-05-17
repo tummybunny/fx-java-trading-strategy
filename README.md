@@ -3,7 +3,7 @@ A graphical user interface to run and test trading strategies by combining diffe
 
 Important
 =========
-Please read the LICENSE section below.
+Please read the **LICENSE** section below.
 Unless you accept its terms and conditions, you are strictly prohibited to make use of this software
 or source codes (directly or indirectly).
 
@@ -29,9 +29,13 @@ You can obtain from other sources but it must adhere to this format:
 DD/MM/YYYY,HH:MM:SS,volume,open_price,closing_price,low,high
 
 For example:
+
 28/10/2008,00:00:01,1,1.2466,1.2467,1.2466,1.2467
+
 28/10/2008,00:00:11,2,1.2466,1.2467,1.2466,1.2467
+
 28/10/2008,00:00:21,1,1.2467,1.2468,1.2467,1.2468
+
 28/10/2008,00:00:31,2,1.2468,1.2468,1.2467,1.2468
 
 
